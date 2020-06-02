@@ -1,0 +1,29 @@
+- model: deeplearing_image_pixelwise
+  operations:
+    segmentation_model_training:
+        main: deeplearning_image_pixelwise/segmentation_model_training
+        flags-import:
+            - BASE_DROPOUT_RATE
+            - BASE_N_FILTERS
+            - LEARNING_RATE
+            - INITIALIZER
+            - EPOCHS
+        requires:
+            - file: data
+        sourcecode:
+            root: deeplearning_image_pixelwise 
+        output-scalars:
+            train_loss: 'train_loss: (\value)'
+            val_loss: 'valid_loss: (\value)'
+            accuracy: 'accuracy: (\value)'
+            val_accuracy: 'val_accuracy: (\value)'
+            mean_iou: 'mean_iou: (\value)'
+            val_mean_iou: 'val_mean_iou: (\value)'
+  resources:
+    model:
+        sources:
+
+  resources:
+    model:
+        sources:
+            - operation: segmentation_model_training 
