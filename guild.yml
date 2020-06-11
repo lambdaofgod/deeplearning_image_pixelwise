@@ -3,11 +3,13 @@
     segmentation_model_training:
         main: deeplearning_image_pixelwise/segmentation_model_training
         flags-import:
-            - BASE_DROPOUT_RATE
+            - BATCH_SIZE
+            - DROPOUT_RATE
             - BASE_N_FILTERS
             - LEARNING_RATE
             - INITIALIZER
             - EPOCHS
+            - ACTIVATION
         requires:
             - file: data
         sourcecode:
