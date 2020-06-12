@@ -10,6 +10,7 @@
             - INITIALIZER
             - EPOCHS
             - ACTIVATION
+            - USE_DEV_SUBSET
         requires:
             - file: data
         sourcecode:

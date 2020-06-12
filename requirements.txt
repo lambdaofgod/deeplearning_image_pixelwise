@@ -1,0 +1,11 @@
+guildai==0.6.6
+nbdev
+tqdm
+pandas
+scikit-learn
+scikit-image
+matplotlib
+tensorflow==2.1.0
+tensorboard==2.1.1
+mlutil @ git+https://github.com/lambdaofgod/mlutil
+toolz

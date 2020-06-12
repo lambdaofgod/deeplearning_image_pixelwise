@@ -25,6 +25,14 @@ pip install -e .
 bash scripts/prepare_data.sh
 ```
 
+Download and unpack pretrained models and their tensorboard logs
+
+```
+bash scripts/get_guild_runs.sh
+```
+
+You can then run tensorboard in `guild` directory.
+
 ### Training
 
 ```
